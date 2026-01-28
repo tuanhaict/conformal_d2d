@@ -148,7 +148,7 @@ def plot_empirical_coverage(coverages, num_cals, num_tests):
     ax.grid(alpha=0.25)
 
     plt.tight_layout()
-    plt.savefig("gaussians_ot.pdf", format="pdf", bbox_inches="tight")
+    plt.savefig("beta_binomial.pdf", format="pdf", bbox_inches="tight")
     plt.show()
 def empirical_coverages(data_in_coeffs, data_out_coeffs, data_hat_coeffs, num_cals =1000, num_tests=1000):
     coverages = []

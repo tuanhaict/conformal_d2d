@@ -38,3 +38,7 @@ python -m tasks.visualization.main --data "mixture_of_betas" --num_data 3200 --e
 ```bash
 python -m tasks.visualization.main --data "mortality" --truncation 10 --dim 1 --num_trains 20 --num_cals 10 --num_cvs 2 --file_path data/Mortality.npy
 ```
+
+```bash
+python -m tasks.visualization.main --data "house_price" --truncation 10 --dim 1 --num_trains 200 --num_cals 100 --num_cvs 20 --file_path data/House_price_processed.npy
+```
