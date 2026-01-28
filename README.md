@@ -16,6 +16,11 @@ The codebase implements conformal prediction methods for distribution-to-distrib
 ├── utils/         # Shared utilities (Fourier, sampling, data loading, etc.)
 └── README.md
 ```
+
+## Installation
+```bash
+pip install -r requirements.txt
+```
 ## Running Experiments
 
 All experimental scripts are located in the `tasks/` directory.
