@@ -18,6 +18,8 @@ The codebase implements conformal prediction methods for distribution-to-distrib
 ```
 
 ## Installation
+
+We need python 3.7 or above
 ```bash
 pip install -r requirements.txt
 ```

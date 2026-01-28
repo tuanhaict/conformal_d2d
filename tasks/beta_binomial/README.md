@@ -1,15 +1,6 @@
 # Beta-binomial verification
 This is a source code for Beta-binomial verification task in the paper.
 
-## Requirements
-We need python 3.7 or above and these following packages:
-```
-matplotlib
-numpy
-h5py
-scikit-learn
-```
-
 ## Usage
 
 The source code is in the `main.py` file with these following command line arguments:
