@@ -395,21 +395,21 @@ def fourier_coeffs_quantile(Q, t, nu=1., sigma=1.):
         coeffs[1:] = vals.mean(axis=1)
 
     return coeffs
-def load_data(name, num_data=1000, eta=1000, dim=3, file_path=None):
+def load_data(name, num_data=1000, eta=1000, dim=3, file_path=None, seed = 123):
     scales = []
     if name == "mixture_of_betas":
         from utils.mixture_of_betas import generate_mixture_of_betas_data
         X_list, Y_list, _ = generate_mixture_of_betas_data(
             num_data=num_data,
             eta=eta,
-            seed=42,
+            seed=seed
         )
     elif name == "trunc_gaussians":
         from utils.truncated_gaussians import generate_toy_mixture_data
         X_list, Y_list = generate_toy_mixture_data(
             num_data=num_data,
             eta=eta,
-            seed=42,
+            seed=seed,
         )
     elif name == "dark_matter":
         from utils.dark_matter import load_dark_matter_data

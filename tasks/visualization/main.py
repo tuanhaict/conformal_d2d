@@ -65,7 +65,7 @@ def parse_args():
     return opt
 def main(args):
     np.random.seed(args.seed)
-    X_list, Y_list, scales = load_data(args.data, args.num_data, args.eta, file_path=args.file_path)
+    X_list, Y_list, scales = load_data(args.data, args.num_data, args.eta, file_path=args.file_path, seed=args.seed)
     perm = np.random.permutation(len(X_list))
     X_list = [X_list[i] for i in perm]
     Y_list = [Y_list[i] for i in perm]
