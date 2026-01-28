@@ -224,7 +224,7 @@ def evc_1d(args, X_list, Y_list):
     #Plot for nonparametric
     plot_evc(
         np.linspace(0.04, 0.3, 100),
-        qhats_3,
+        qhats_2,
         qhats_5,
         model="nonparametric",
         data=args.data

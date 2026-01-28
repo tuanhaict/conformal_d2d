@@ -111,7 +111,7 @@ def main(args):
     e = Estimator(training_coeffs, cv_coeffs, t)
     e.cross_validation()
     X_cal, Y_cal = [], []
-    if args.data == "gaussians":
+    if args.data == "trunc_gaussians":
         X_cal, Y_cal = generate_toy_mixture_data(
             num_data=args.num_cals,
             eta=args.eta,
