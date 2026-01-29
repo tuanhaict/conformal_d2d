@@ -55,12 +55,6 @@ def parse_args():
         default=200,
         help="Number of cross-validation samples",
     )
-    parser.add_argument(
-        "--k_neighbors",
-        type=int,
-        default=500,
-        help="Number of neighbors for adaptive CP"
-    )
     opt = parser.parse_args()
     return opt
 def calculate_conditional_times(cal_x_coeffs, K, xs, ys_hat, cal_scores, alpha, t):

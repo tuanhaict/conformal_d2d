@@ -14,6 +14,7 @@ usage: main.py [-h]
                [--num_cals NUM_CALS]
                [--num_cvs NUM_CVS]
                [--file_path FILE_PATH]
+               [--seed SEED]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -28,6 +29,7 @@ optional arguments:
   --num_cvs NUM_CVS     Number of cross-validation samples
   --file_path FILE_PATH 
                         File path for loading data
+  --seed SEED           Random seed
 ```
 
 Example command:
